@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+/* LAYOUT */
+
+body {
+  font-family: sans-serif;
+  color: #eee;
+  background-color: #222;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+header {
+  height: 45%;
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  height: 50%;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* HEADER */
+
+.game-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid white;
+  height: 100%;
+}
+
+#title {
+  font-size: 5rem;
+}
+
+.number {
+  font-size: 5rem;
+  text-align: center;
+  width: 30%;
+  padding: 20px;
+  background-color: white;
+  color: black;
+}
+
+.again {
+  align-self: flex-start;
+  margin: 20px;
+}
+
+.txt-between {
+  font-size: 180%;
+  margin: 20px;
+}
+
+.number {
+  align-self: center;
+}
+
+/* MAIN */
+
+.left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border: 1px solid white;
+}
+
+.guess {
+  background-color: transparent;
+  border: 3px solid white;
+  font-size: 4rem;
+  padding: 2.5rem;
+  width: 25rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.right {
+  width: 50%;
+  height: 100%;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border: 1px solid white;
+  font-size: 3rem;
+}
+
+.btn {
+  border: none;
+  background-color: #eee;
+  color: #222;
+  font-size: 2rem;
+  font-family: inherit;
+  padding: 2rem 3rem;
+  cursor: pointer;
+}
