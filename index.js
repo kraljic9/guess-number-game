@@ -6,6 +6,7 @@
 // message for feedback - .message
 // score - .score
 // highscore - .highscore
+// again button - .again
 
 let score = 20;
 let highscore = 0;
@@ -32,7 +33,7 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector(".score").textContent = score;
     if (score < 1) {
       document.querySelector("body").style.backgroundColor = "#FF474C";
-      document.querySelector(".message").textContent = "LOSER";
+      document.querySelector(".message").textContent = "You Lose!";
     }
   } else if (guess > secretNumber) {
     score--;
@@ -40,7 +41,15 @@ document.querySelector(".check").addEventListener("click", function () {
     document.querySelector(".score").textContent = score;
     if (score < 1) {
       document.querySelector("body").style.backgroundColor = "#FF474C";
-      document.querySelector(".message").textContent = "LOSER";
+      document.querySelector(".message").textContent = "You Lose!";
     }
   }
+});
+
+document.querySelector(".again").addEventListener("click", function () {
+  document.querySelector("body").style.backgroundColor = "#222";
+  document.querySelector(".message").textContent = "Start guessing...";
+  document.querySelector(".score").textContent = score = 20;
+  document.querySelector(".number").textContent =
+    Math.trunc(Math.random() * 20) + 1;
 });
