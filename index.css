@@ -83,7 +83,7 @@ main {
   justify-content: center;
 }
 
-.guess {
+#guess {
   background-color: transparent;
   font-size: 4rem;
   padding: 2.5rem;
